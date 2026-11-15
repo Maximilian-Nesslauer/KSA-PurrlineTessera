@@ -1,0 +1,20 @@
+name = "Tessera by Purrline Rocketworks"
+version = "1.0.0"
+description = "A modular lunar lander kit: decks, panels, a thrust cone, a core column, tanks, the Mizar descent engine, landing legs, a lattice ramp and a drum tank."
+assets = [
+    "TesseraPanelAAssets.xml",
+    "TesseraGoldAAssets.xml",
+    "TesseraSilverAAssets.xml",
+    "TesseraStructAAssets.xml",
+    "TesseraTankAAssets.xml",
+    "MizarEngineAAssets.xml",
+    "TesseraLegAAssets.xml",
+    "TesseraRampAAssets.xml",
+    "TesseraDrumAAssets.xml",
+    "TesseraStructAGameData.xml",
+    "TesseraTankAGameData.xml",
+    "MizarEngineAGameData.xml",
+    "TesseraLegAGameData.xml",
+    "TesseraRampAGameData.xml",
+    "TesseraDrumAGameData.xml",
+]

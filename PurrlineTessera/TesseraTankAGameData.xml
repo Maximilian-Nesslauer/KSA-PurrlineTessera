@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Game data of the set TesseraTankA. Parts by Purrline Rocketworks, a fictional maker. -->
+<Assets>
+  <Part Id="TesseraTankA_Prefab_CapsuleTankA" Modify="Patch" DisplayName="Tessera Capsule Tank">
+    <InertMasses Modify="Extend">
+      <SolidCuboidMass>
+        <Mass Kg="18.535" />
+        <LocationAsmb X="0.1" Y="0" Z="0" />
+        <LengthX M="0.2" />
+        <LengthY M="0.45" />
+        <LengthZ M="0.45" />
+      </SolidCuboidMass>
+    </InertMasses>
+    <EditorTags Modify="Extend">
+      <EditorTag Ref="Fuel Tanks" />
+    </EditorTags>
+    <Components Modify="Extend">
+      <Tank Key="MainTank">
+        <CylindricalTank>
+          <LocationAsmb X="0.64" />
+          <Material Ref="Aluminum.2014" Phase="Solid" />
+          <Length M="1.2" />
+          <DomeHeightFraction>1</DomeHeightFraction>
+          <OuterRadius M="0.3" />
+          <WallThickness Mm="1.5" />
+        </CylindricalTank>
+      </Tank>
+    </Components>
+    <Connectors Modify="Extend">
+      <Connector Key="_connector01Foot" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+      <Connector Key="_connector02Equator" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+      <Connector Key="_connector03EquatorUpper" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+      <Connector Key="_connector04TopPort" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+    </Connectors>
+  </Part>
+  <Part Id="TesseraTankA_Prefab_SphereTankA" Modify="Patch" DisplayName="Tessera Sphere Tank">
+    <InertMasses Modify="Extend">
+      <SolidCuboidMass>
+        <Mass Kg="8.274" />
+        <LocationAsmb X="0.1" Y="0" Z="0" />
+        <LengthX M="0.2" />
+        <LengthY M="0.45" />
+        <LengthZ M="0.45" />
+      </SolidCuboidMass>
+    </InertMasses>
+    <EditorTags Modify="Extend">
+      <EditorTag Ref="Fuel Tanks" />
+    </EditorTags>
+    <Components Modify="Extend">
+      <Tank Key="MainTank">
+        <SphericalTank>
+          <LocationAsmb X="0.34" />
+          <Material Ref="Aluminum.2014" Phase="Solid" />
+          <OuterRadius M="0.3" />
+          <WallThickness Mm="1.5" />
+        </SphericalTank>
+      </Tank>
+    </Components>
+    <Connectors Modify="Extend">
+      <Connector Key="_connector01Foot" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+      <Connector Key="_connector02Equator" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+      <Connector Key="_connector03TopPort" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+    </Connectors>
+  </Part>
+</Assets>

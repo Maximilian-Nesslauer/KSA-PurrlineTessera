@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Game data of the set TesseraDrumA. Parts by Purrline Rocketworks, a fictional maker. -->
+<Assets>
+  <Part Id="TesseraDrumA_Prefab_DrumTankA" Modify="Patch" DisplayName="Tessera Drum Tank">
+    <InertMasses Modify="Extend">
+      <SolidCuboidMass>
+        <Mass Kg="44.777" />
+        <LocationAsmb X="0.425" Y="0" Z="0" />
+        <LengthX M="0.85" />
+        <LengthY M="1" />
+        <LengthZ M="1" />
+      </SolidCuboidMass>
+    </InertMasses>
+    <EditorTags Modify="Extend">
+      <EditorTag Ref="Fuel Tanks" />
+    </EditorTags>
+    <Components Modify="Extend">
+      <Tank Key="MainTank">
+        <CylindricalTank>
+          <LocationAsmb X="0.425" />
+          <Material Ref="Aluminum.2014" Phase="Solid" />
+          <Length M="0.75" />
+          <DomeHeightFraction>0.528</DomeHeightFraction>
+          <OuterRadius M="0.6" />
+          <WallThickness Mm="1.5" />
+        </CylindricalTank>
+      </Tank>
+    </Components>
+    <Connectors Modify="Extend">
+      <Connector Key="_connector01SeatBottom" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+      <Connector Key="_connector02SeatBottomInner" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+        <Flags>Internal</Flags>
+      </Connector>
+      <Connector Key="_connector03SeatTop" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+      <Connector Key="_connector04SeatTopInner" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+        <Flags>Internal</Flags>
+      </Connector>
+    </Connectors>
+    <AlignedGroups Modify="Extend">
+      <Aligned>
+        <Connectors>
+          <Connector KeyRef="_connector01SeatBottom" />
+          <Connector KeyRef="_connector02SeatBottomInner" />
+        </Connectors>
+      </Aligned>
+      <Aligned>
+        <Connectors>
+          <Connector KeyRef="_connector03SeatTop" />
+          <Connector KeyRef="_connector04SeatTopInner" />
+        </Connectors>
+      </Aligned>
+    </AlignedGroups>
+  </Part>
+</Assets>

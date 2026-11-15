@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Game data of the set TesseraLegA. Parts by Purrline Rocketworks, a fictional maker. -->
+<Assets>
+  <KeyframeAnimation Id="TesseraLegA_Prefab_LandingLegShortA_Anim" Path="Animations/TesseraLegA_Prefab_LandingLegShortA_Anim.glb" />
+  <KeyframeAnimation Id="TesseraLegA_Prefab_LandingLegLongA_Anim" Path="Animations/TesseraLegA_Prefab_LandingLegLongA_Anim.glb" />
+  <Part Id="TesseraLegA_Prefab_LandingLegShortA" Modify="Patch" DisplayName="Tessera Landing Leg (short)">
+    <InertMasses Modify="Extend">
+      <SolidCuboidMass>
+        <Mass Kg="10" />
+        <LocationAsmb X="-0.3" Y="0.25" Z="0" />
+        <LengthX M="0.9" />
+        <LengthY M="0.5" />
+        <LengthZ M="0.2" />
+      </SolidCuboidMass>
+    </InertMasses>
+    <EditorTags Modify="Extend">
+      <EditorTag Ref="Landing" />
+    </EditorTags>
+    <Components Modify="Extend">
+      <KeyframeAnimationModule Key="LandingLegAnimation" ShowDeployRetract="true">
+        <KeyframeAnimation Ref="TesseraLegA_Prefab_LandingLegShortA_Anim" />
+      </KeyframeAnimationModule>
+    </Components>
+    <Connectors Modify="Extend">
+      <Connector Key="_connector01Mount" Modify="Patch">
+        <Flags>ToSurface</Flags>
+      </Connector>
+    </Connectors>
+  </Part>
+  <Part Id="TesseraLegA_Prefab_LandingLegLongA" Modify="Patch" DisplayName="Tessera Landing Leg (long)">
+    <InertMasses Modify="Extend">
+      <SolidCuboidMass>
+        <Mass Kg="14" />
+        <LocationAsmb X="-0.55" Y="0.6" Z="0" />
+        <LengthX M="1.5" />
+        <LengthY M="1.2" />
+        <LengthZ M="0.2" />
+      </SolidCuboidMass>
+    </InertMasses>
+    <EditorTags Modify="Extend">
+      <EditorTag Ref="Landing" />
+    </EditorTags>
+    <Components Modify="Extend">
+      <KeyframeAnimationModule Key="LandingLegAnimation" ShowDeployRetract="true">
+        <KeyframeAnimation Ref="TesseraLegA_Prefab_LandingLegLongA_Anim" />
+      </KeyframeAnimationModule>
+    </Components>
+    <Connectors Modify="Extend">
+      <Connector Key="_connector01Mount" Modify="Patch">
+        <Flags>ToSurface</Flags>
+      </Connector>
+    </Connectors>
+  </Part>
+</Assets>

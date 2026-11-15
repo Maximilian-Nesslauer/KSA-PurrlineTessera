@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Game data of the set MizarEngineA. Parts by Purrline Rocketworks, a fictional maker. -->
+<Assets>
+  <Part Id="MizarEngineA_Prefab_DescentEngineA" Modify="Patch" DisplayName="Mizar" CrashTolerance="3e6">
+    <InertMasses Modify="Extend">
+      <SolidCuboidMass>
+        <Mass Kg="30" />
+        <LocationAsmb X="-0.25" Y="0" Z="0" />
+        <LengthX M="0.5" />
+        <LengthY M="0.25" />
+        <LengthZ M="0.25" />
+      </SolidCuboidMass>
+    </InertMasses>
+    <EditorTags Modify="Extend">
+      <EditorTag Ref="Engines" />
+    </EditorTags>
+    <Diameters Modify="Extend">
+      <Diameter M="1" />
+    </Diameters>
+    <Connectors Modify="Extend">
+      <Connector Key="_connector01Mount" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+    </Connectors>
+    <RocketEngineControllers Modify="Extend">
+      <RocketEngineController Key="DescentEngine">
+        <Rockets>
+          <Rocket SubPart="MizarEngineA_Subpart_EngineAssembly1" KeyRef="Engine" />
+        </Rockets>
+      </RocketEngineController>
+    </RocketEngineControllers>
+    <ConsumerFeedWirings Modify="Extend">
+      <ConsumerFeedWiring SubPart="MizarEngineA_Subpart_EngineAssembly1" KeyRef="ThrustChamber">
+        <FeedsFroms>
+          <FeedsFrom>
+            <Connector KeyRef="_connector01Mount" />
+          </FeedsFrom>
+        </FeedsFroms>
+      </ConsumerFeedWiring>
+    </ConsumerFeedWirings>
+    <Gimbals Modify="Extend">
+      <Gimbal Key="MizarEngineA_Subpart_EngineAssembly1" Modify="Patch">
+        <MaxAngleY Degrees="4" />
+        <MaxAngleZ Degrees="4" />
+      </Gimbal>
+    </Gimbals>
+  </Part>
+  <Part Id="MizarEngineA_Prefab_DescentEngineFixedA" Modify="Patch" DisplayName="Mizar Fixed" CrashTolerance="3e6">
+    <InertMasses Modify="Extend">
+      <SolidCuboidMass>
+        <Mass Kg="26" />
+        <LocationAsmb X="-0.27" Y="0" Z="0" />
+        <LengthX M="0.5" />
+        <LengthY M="0.25" />
+        <LengthZ M="0.25" />
+      </SolidCuboidMass>
+    </InertMasses>
+    <EditorTags Modify="Extend">
+      <EditorTag Ref="Engines" />
+    </EditorTags>
+    <Diameters Modify="Extend">
+      <Diameter M="1" />
+    </Diameters>
+    <Connectors Modify="Extend">
+      <Connector Key="_connector01Mount" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+    </Connectors>
+    <RocketEngineControllers Modify="Extend">
+      <RocketEngineController Key="DescentEngine">
+        <Rockets>
+          <Rocket SubPart="MizarEngineA_Subpart_EngineAssembly1" KeyRef="Engine" />
+        </Rockets>
+      </RocketEngineController>
+    </RocketEngineControllers>
+    <ConsumerFeedWirings Modify="Extend">
+      <ConsumerFeedWiring SubPart="MizarEngineA_Subpart_EngineAssembly1" KeyRef="ThrustChamber">
+        <FeedsFroms>
+          <FeedsFrom>
+            <Connector KeyRef="_connector01Mount" />
+          </FeedsFrom>
+        </FeedsFroms>
+      </ConsumerFeedWiring>
+    </ConsumerFeedWirings>
+  </Part>
+  <SubPart Id="MizarEngineA_Subpart_EngineAssembly" Modify="Patch">
+    <Rockets Modify="Extend">
+      <Rocket Key="Engine">
+        <Core KeyRef="ThrustChamber" />
+        <Nozzles>
+          <Nozzle KeyRef="Nozzle" />
+        </Nozzles>
+      </Rocket>
+    </Rockets>
+    <RocketCores Modify="Extend">
+      <Combustor Key="ThrustChamber">
+        <FeedsFroms>
+          <FeedsFrom FromParent="true" />
+        </FeedsFroms>
+        <Reaction Ref="Methalox">
+          <MixtureRatio>3.4</MixtureRatio>
+        </Reaction>
+        <MaxPressure Bar="4.84" />
+        <ThermalEfficiency Value="1" />
+        <MinimumThrottle Value="0.1" />
+      </Combustor>
+    </RocketCores>
+    <RocketNozzles Modify="Extend">
+      <DeLavalNozzle Key="Nozzle">
+        <ExitDiameter M="0.27" />
+        <FxExitDiameter M="0.27" />
+        <AreaRatio Value="16" />
+        <FlowEfficiency Value="1" />
+        <ExpansionEfficiency Value="1" />
+        <ExhaustLocation X="-0.57" Y="0" Z="0" />
+        <ExhaustDirection X="-1" Y="0" Z="0" />
+        <ReactionPlumes>
+          <ReactionPlume Default="true">
+            <VolumetricExhaust Ref="EngineACompact" />
+          </ReactionPlume>
+        </ReactionPlumes>
+        <SoundEvent Ref="DefaultEngineSoundBehavior" Action="On" />
+      </DeLavalNozzle>
+    </RocketNozzles>
+  </SubPart>
+</Assets>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Game data of the set TesseraRampA. Parts by Purrline Rocketworks, a fictional maker. -->
+<Assets>
+  <KeyframeAnimation Id="TesseraRampA_Prefab_LatticeRampA_Anim" Path="Animations/TesseraRampA_Prefab_LatticeRampA_Anim.glb" />
+  <Part Id="TesseraRampA_Prefab_LatticeRampA" Modify="Patch" DisplayName="Tessera Lattice Ramp">
+    <InertMasses Modify="Extend">
+      <SolidCuboidMass>
+        <Mass Kg="10" />
+        <LocationAsmb X="0.657" Y="0.137" Z="0" />
+        <LengthX M="1.28" />
+        <LengthY M="0.32" />
+        <LengthZ M="0.8" />
+      </SolidCuboidMass>
+    </InertMasses>
+    <EditorTags Modify="Extend">
+      <EditorTag Ref="Structural" />
+    </EditorTags>
+    <Components Modify="Extend">
+      <KeyframeAnimationModule Key="LatticeRampDeploy" ShowDeployRetract="true">
+        <KeyframeAnimation Ref="TesseraRampA_Prefab_LatticeRampA_Anim" />
+      </KeyframeAnimationModule>
+    </Components>
+    <Connectors Modify="Extend">
+      <Connector Key="_connector01Mount" Modify="Patch">
+        <Flags>ToSurface</Flags>
+      </Connector>
+    </Connectors>
+  </Part>
+</Assets>

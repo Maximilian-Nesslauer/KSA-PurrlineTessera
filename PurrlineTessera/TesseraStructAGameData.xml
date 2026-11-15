@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Game data of the set TesseraStructA. Parts by Purrline Rocketworks, a fictional maker. -->
+<Assets>
+  <Part Id="TesseraStructA_Prefab_HexDeckA" Modify="Patch" DisplayName="Tessera Hex Deck" FaceSnapMode="PhysicsCollider">
+    <InertMasses Modify="Extend">
+      <SolidCuboidMass>
+        <Mass Kg="24" />
+        <LocationAsmb X="0" Y="0" Z="0" />
+        <LengthX M="0.04" />
+        <LengthY M="1.5" />
+        <LengthZ M="1.5" />
+      </SolidCuboidMass>
+    </InertMasses>
+    <EditorTags Modify="Extend">
+      <EditorTag Ref="Structural" />
+    </EditorTags>
+    <Connectors Modify="Extend">
+      <Connector Key="_connector01SeatTop" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+      <Connector Key="_connector02SeatBottom" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+      <Connector Key="_connector03Station1" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+      <Connector Key="_connector04Station2" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+      <Connector Key="_connector05Station3" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+      <Connector Key="_connector06Station4" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+      <Connector Key="_connector07Station5" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+      <Connector Key="_connector08Station6" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+      <Connector Key="_connector09StationBottom1" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+      <Connector Key="_connector10StationBottom2" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+      <Connector Key="_connector11StationBottom3" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+      <Connector Key="_connector12StationBottom4" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+      <Connector Key="_connector13StationBottom5" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+      <Connector Key="_connector14StationBottom6" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+    </Connectors>
+    <SymmetryGroups Modify="Extend">
+      <SymmetryGroup>
+        <Connectors>
+          <Connector KeyRef="_connector03Station1" />
+          <Connector KeyRef="_connector05Station3" />
+          <Connector KeyRef="_connector07Station5" />
+        </Connectors>
+      </SymmetryGroup>
+      <SymmetryGroup>
+        <Connectors>
+          <Connector KeyRef="_connector04Station2" />
+          <Connector KeyRef="_connector06Station4" />
+          <Connector KeyRef="_connector08Station6" />
+        </Connectors>
+      </SymmetryGroup>
+      <SymmetryGroup>
+        <Connectors>
+          <Connector KeyRef="_connector09StationBottom1" />
+          <Connector KeyRef="_connector11StationBottom3" />
+          <Connector KeyRef="_connector13StationBottom5" />
+        </Connectors>
+      </SymmetryGroup>
+      <SymmetryGroup>
+        <Connectors>
+          <Connector KeyRef="_connector10StationBottom2" />
+          <Connector KeyRef="_connector12StationBottom4" />
+          <Connector KeyRef="_connector14StationBottom6" />
+        </Connectors>
+      </SymmetryGroup>
+      <SymmetryGroup>
+        <Connectors>
+          <Connector KeyRef="_connectorEdge01Up1" />
+          <Connector KeyRef="_connectorEdge03Up3" />
+          <Connector KeyRef="_connectorEdge05Up5" />
+        </Connectors>
+      </SymmetryGroup>
+      <SymmetryGroup>
+        <Connectors>
+          <Connector KeyRef="_connectorEdge02Up2" />
+          <Connector KeyRef="_connectorEdge04Up4" />
+          <Connector KeyRef="_connectorEdge06Up6" />
+        </Connectors>
+      </SymmetryGroup>
+      <SymmetryGroup>
+        <Connectors>
+          <Connector KeyRef="_connectorEdge07Down1" />
+          <Connector KeyRef="_connectorEdge09Down3" />
+          <Connector KeyRef="_connectorEdge11Down5" />
+        </Connectors>
+      </SymmetryGroup>
+      <SymmetryGroup>
+        <Connectors>
+          <Connector KeyRef="_connectorEdge08Down2" />
+          <Connector KeyRef="_connectorEdge10Down4" />
+          <Connector KeyRef="_connectorEdge12Down6" />
+        </Connectors>
+      </SymmetryGroup>
+    </SymmetryGroups>
+  </Part>
+  <Part Id="TesseraStructA_Prefab_OctDeckA" Modify="Patch" DisplayName="Tessera Oct Deck" FaceSnapMode="PhysicsCollider">
+    <InertMasses Modify="Extend">
+      <SolidCuboidMass>
+        <Mass Kg="36" />
+        <LocationAsmb X="0" Y="0" Z="0" />
+        <LengthX M="0.04" />
+        <LengthY M="2.1" />
+        <LengthZ M="2.1" />
+      </SolidCuboidMass>
+    </InertMasses>
+    <EditorTags Modify="Extend">
+      <EditorTag Ref="Structural" />
+    </EditorTags>
+    <Connectors Modify="Extend">
+      <Connector Key="_connector01SeatTop" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+      <Connector Key="_connector02SeatBottom" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+      <Connector Key="_connector03TankStation1" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+      <Connector Key="_connector04TankStation2" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+      <Connector Key="_connector05TankStation3" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+      <Connector Key="_connector06TankStation4" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+      <Connector Key="_connector07EquipStation1" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+      <Connector Key="_connector08EquipStation2" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+      <Connector Key="_connector09EquipStation3" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+      <Connector Key="_connector10EquipStation4" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+      <Connector Key="_connector11EquipStationBottom1" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+      <Connector Key="_connector12EquipStationBottom2" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+      <Connector Key="_connector13EquipStationBottom3" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+      <Connector Key="_connector14EquipStationBottom4" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+    </Connectors>
+    <SymmetryGroups Modify="Extend">
+      <SymmetryGroup>
+        <Connectors>
+          <Connector KeyRef="_connector03TankStation1" />
+          <Connector KeyRef="_connector04TankStation2" />
+          <Connector KeyRef="_connector05TankStation3" />
+          <Connector KeyRef="_connector06TankStation4" />
+        </Connectors>
+      </SymmetryGroup>
+      <SymmetryGroup>
+        <Connectors>
+          <Connector KeyRef="_connector07EquipStation1" />
+          <Connector KeyRef="_connector08EquipStation2" />
+          <Connector KeyRef="_connector09EquipStation3" />
+          <Connector KeyRef="_connector10EquipStation4" />
+        </Connectors>
+      </SymmetryGroup>
+      <SymmetryGroup>
+        <Connectors>
+          <Connector KeyRef="_connector11EquipStationBottom1" />
+          <Connector KeyRef="_connector12EquipStationBottom2" />
+          <Connector KeyRef="_connector13EquipStationBottom3" />
+          <Connector KeyRef="_connector14EquipStationBottom4" />
+        </Connectors>
+      </SymmetryGroup>
+      <SymmetryGroup>
+        <Connectors>
+          <Connector KeyRef="_connectorEdge01Up1" />
+          <Connector KeyRef="_connectorEdge03Up3" />
+          <Connector KeyRef="_connectorEdge05Up5" />
+          <Connector KeyRef="_connectorEdge07Up7" />
+        </Connectors>
+      </SymmetryGroup>
+      <SymmetryGroup>
+        <Connectors>
+          <Connector KeyRef="_connectorEdge02Up2" />
+          <Connector KeyRef="_connectorEdge04Up4" />
+          <Connector KeyRef="_connectorEdge06Up6" />
+          <Connector KeyRef="_connectorEdge08Up8" />
+        </Connectors>
+      </SymmetryGroup>
+      <SymmetryGroup>
+        <Connectors>
+          <Connector KeyRef="_connectorEdge09Down1" />
+          <Connector KeyRef="_connectorEdge11Down3" />
+          <Connector KeyRef="_connectorEdge13Down5" />
+          <Connector KeyRef="_connectorEdge15Down7" />
+        </Connectors>
+      </SymmetryGroup>
+      <SymmetryGroup>
+        <Connectors>
+          <Connector KeyRef="_connectorEdge10Down2" />
+          <Connector KeyRef="_connectorEdge12Down4" />
+          <Connector KeyRef="_connectorEdge14Down6" />
+          <Connector KeyRef="_connectorEdge16Down8" />
+        </Connectors>
+      </SymmetryGroup>
+    </SymmetryGroups>
+  </Part>
+  <Part Id="TesseraStructA_Prefab_WallPanelA" Modify="Patch" DisplayName="Tessera Wall Panel" FaceSnapMode="PhysicsCollider">
+    <InertMasses Modify="Extend">
+      <SolidCuboidMass>
+        <Mass Kg="5" />
+        <LocationAsmb X="0" Y="0" Z="0" />
+        <LengthX M="1" />
+        <LengthY M="0.025" />
+        <LengthZ M="1" />
+      </SolidCuboidMass>
+    </InertMasses>
+    <EditorTags Modify="Extend">
+      <EditorTag Ref="Panels" />
+    </EditorTags>
+  </Part>
+  <Part Id="TesseraStructA_Prefab_HalfPanelA" Modify="Patch" DisplayName="Tessera Half Panel" FaceSnapMode="PhysicsCollider">
+    <InertMasses Modify="Extend">
+      <SolidCuboidMass>
+        <Mass Kg="2.5" />
+        <LocationAsmb X="0" Y="0" Z="0" />
+        <LengthX M="0.5" />
+        <LengthY M="0.025" />
+        <LengthZ M="1" />
+      </SolidCuboidMass>
+    </InertMasses>
+    <EditorTags Modify="Extend">
+      <EditorTag Ref="Panels" />
+    </EditorTags>
+  </Part>
+  <Part Id="TesseraStructA_Prefab_TaperPanelA" Modify="Patch" DisplayName="Tessera Taper Panel" FaceSnapMode="PhysicsCollider">
+    <InertMasses Modify="Extend">
+      <SolidCuboidMass>
+        <Mass Kg="2.4" />
+        <LocationAsmb X="0" Y="0" Z="0" />
+        <LengthX M="0.5" />
+        <LengthY M="0.025" />
+        <LengthZ M="0.875" />
+      </SolidCuboidMass>
+    </InertMasses>
+    <EditorTags Modify="Extend">
+      <EditorTag Ref="Panels" />
+    </EditorTags>
+  </Part>
+  <Part Id="TesseraStructA_Prefab_SolarWallPanelA" Modify="Patch" DisplayName="Tessera Solar Wall Panel" FaceSnapMode="PhysicsCollider">
+    <InertMasses Modify="Extend">
+      <SolidCuboidMass>
+        <Mass Kg="7" />
+        <LocationAsmb X="0" Y="0" Z="0" />
+        <LengthX M="1" />
+        <LengthY M="0.025" />
+        <LengthZ M="1" />
+      </SolidCuboidMass>
+    </InertMasses>
+    <EditorTags Modify="Extend">
+      <EditorTag Ref="Electrical" />
+      <EditorTag Ref="Panels" />
+    </EditorTags>
+    <Components Modify="Extend">
+      <SolarPanel>
+        <Produced W="420" />
+        <Transform>
+          <Rotation Z="1.5708" />
+        </Transform>
+      </SolarPanel>
+    </Components>
+  </Part>
+  <Part Id="TesseraStructA_Prefab_SolarHalfPanelA" Modify="Patch" DisplayName="Tessera Solar Half Panel" FaceSnapMode="PhysicsCollider">
+    <InertMasses Modify="Extend">
+      <SolidCuboidMass>
+        <Mass Kg="3.5" />
+        <LocationAsmb X="0" Y="0" Z="0" />
+        <LengthX M="0.5" />
+        <LengthY M="0.025" />
+        <LengthZ M="1" />
+      </SolidCuboidMass>
+    </InertMasses>
+    <EditorTags Modify="Extend">
+      <EditorTag Ref="Electrical" />
+      <EditorTag Ref="Panels" />
+    </EditorTags>
+    <Components Modify="Extend">
+      <SolarPanel>
+        <Produced W="210" />
+        <Transform>
+          <Rotation Z="1.5708" />
+        </Transform>
+      </SolarPanel>
+    </Components>
+  </Part>
+  <Part Id="TesseraStructA_Prefab_ThrustConeA" Modify="Patch" DisplayName="Tessera Thrust Cone">
+    <InertMasses Modify="Extend">
+      <SolidCuboidMass>
+        <Mass Kg="40" />
+        <LocationAsmb X="-0.31" Y="0" Z="0" />
+        <LengthX M="0.62" />
+        <LengthY M="1.1" />
+        <LengthZ M="1.1" />
+      </SolidCuboidMass>
+    </InertMasses>
+    <EditorTags Modify="Extend">
+      <EditorTag Ref="Structural" />
+    </EditorTags>
+    <Connectors Modify="Extend">
+      <Connector Key="_connector01TopRing" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+      <Connector Key="_connector03SeatRing01" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+      <Connector Key="_connector04SeatRing03" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+      <Connector Key="_connector05SeatRing05" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+      <Connector Key="_connector06SeatRing07" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+      <Connector Key="_connector07SeatRing09" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+      <Connector Key="_connector08SeatRing11" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+      <Connector Key="_connector09SeatRing02" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+      <Connector Key="_connector10SeatRing04" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+      <Connector Key="_connector11SeatRing06" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+      <Connector Key="_connector12SeatRing08" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+      <Connector Key="_connector13SeatRing10" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+      <Connector Key="_connector14SeatRing12" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+      <Connector Key="_connector15SeatCentre" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+    </Connectors>
+    <SymmetryGroups Modify="Extend">
+      <SymmetryGroup>
+        <Connectors>
+          <Connector KeyRef="_connector03SeatRing01" />
+          <Connector KeyRef="_connector06SeatRing07" />
+          <Connector KeyRef="_connector10SeatRing04" />
+          <Connector KeyRef="_connector13SeatRing10" />
+        </Connectors>
+      </SymmetryGroup>
+      <SymmetryGroup>
+        <Connectors>
+          <Connector KeyRef="_connector04SeatRing03" />
+          <Connector KeyRef="_connector07SeatRing09" />
+          <Connector KeyRef="_connector11SeatRing06" />
+          <Connector KeyRef="_connector14SeatRing12" />
+        </Connectors>
+      </SymmetryGroup>
+      <SymmetryGroup>
+        <Connectors>
+          <Connector KeyRef="_connector05SeatRing05" />
+          <Connector KeyRef="_connector08SeatRing11" />
+          <Connector KeyRef="_connector09SeatRing02" />
+          <Connector KeyRef="_connector12SeatRing08" />
+        </Connectors>
+      </SymmetryGroup>
+    </SymmetryGroups>
+  </Part>
+  <Part Id="TesseraStructA_Prefab_CoreColumnA" Modify="Patch" DisplayName="Tessera Core Column">
+    <InertMasses Modify="Extend">
+      <SolidCuboidMass>
+        <Mass Kg="12" />
+        <LocationAsmb X="0.5" Y="0" Z="0" />
+        <LengthX M="1" />
+        <LengthY M="0.5" />
+        <LengthZ M="0.5" />
+      </SolidCuboidMass>
+    </InertMasses>
+    <EditorTags Modify="Extend">
+      <EditorTag Ref="Structural" />
+    </EditorTags>
+    <Connectors Modify="Extend">
+      <Connector Key="_connector01Base" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+      <Connector Key="_connector02Top" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+      <Connector Key="_connector03TankSeat" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+    </Connectors>
+    <SymmetryGroups Modify="Extend">
+      <SymmetryGroup>
+        <Connectors>
+          <Connector KeyRef="_connectorEdge01Panel1" />
+          <Connector KeyRef="_connectorEdge02Panel2" />
+          <Connector KeyRef="_connectorEdge03Panel3" />
+          <Connector KeyRef="_connectorEdge04Panel4" />
+        </Connectors>
+      </SymmetryGroup>
+    </SymmetryGroups>
+  </Part>
+  <Part Id="TesseraStructA_Prefab_DeckStrutA" Modify="Patch" DisplayName="Tessera Deck Strut">
+    <InertMasses Modify="Extend">
+      <SolidCuboidMass>
+        <Mass Kg="2.5" />
+        <LocationAsmb X="0.5" Y="0" Z="0" />
+        <LengthX M="1" />
+        <LengthY M="0.04" />
+        <LengthZ M="0.04" />
+      </SolidCuboidMass>
+    </InertMasses>
+    <EditorTags Modify="Extend">
+      <EditorTag Ref="Structural" />
+    </EditorTags>
+  </Part>
+</Assets>
