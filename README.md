@@ -92,4 +92,4 @@ Code and game data: MIT ([LICENSE](LICENSE)). Meshes, textures, logo and picture
 
 ## Links
 
-[Forum thread](https://forums.ahwoo.com/forums/kitten-space-agency/mod-releases/tessera-by-purrline-rocketworks.ID/) | [Issues](https://github.com/Maximilian-Nesslauer/KSA-PurrlineTessera/issues)
+[Forum thread](https://forums.ahwoo.com/forums/kitten-space-agency/mod-releases/tessera-by-purrline-rocketworks.1698/) | [Issues](https://github.com/Maximilian-Nesslauer/KSA-PurrlineTessera/issues)
