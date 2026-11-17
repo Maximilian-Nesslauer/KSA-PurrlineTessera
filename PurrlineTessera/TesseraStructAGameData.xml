@@ -2,6 +2,7 @@
 <!-- Game data of the set TesseraStructA. Parts by Purrline Rocketworks, a fictional maker. -->
 <Assets>
   <Part Id="TesseraStructA_Prefab_HexDeckA" Modify="Patch" DisplayName="Tessera Hex Deck" FaceSnapMode="PhysicsCollider">
+    <ThumbnailRotation X="0" Y="0" Z="0.3491" />
     <InertMasses Modify="Extend">
       <SolidCuboidMass>
         <Mass Kg="24" />
@@ -118,6 +119,7 @@
     </SymmetryGroups>
   </Part>
   <Part Id="TesseraStructA_Prefab_OctDeckA" Modify="Patch" DisplayName="Tessera Oct Deck" FaceSnapMode="PhysicsCollider">
+    <ThumbnailRotation X="0" Y="0" Z="0.3491" />
     <InertMasses Modify="Extend">
       <SolidCuboidMass>
         <Mass Kg="36" />
@@ -333,6 +335,7 @@
     </InertMasses>
     <EditorTags Modify="Extend">
       <EditorTag Ref="Structural" />
+      <EditorTag Ref="NoFaceSnapping" />
     </EditorTags>
     <Connectors Modify="Extend">
       <Connector Key="_connector01TopRing" Modify="Patch">
@@ -417,6 +420,7 @@
     </InertMasses>
     <EditorTags Modify="Extend">
       <EditorTag Ref="Structural" />
+      <EditorTag Ref="NoFaceSnapping" />
     </EditorTags>
     <Connectors Modify="Extend">
       <Connector Key="_connector01Base" Modify="Patch">

@@ -1,12 +1,16 @@
 # Tessera by Purrline Rocketworks [![License: MIT](https://img.shields.io/badge/code-MIT-yellow.svg)](LICENSE) [![License: CC BY 4.0](https://img.shields.io/badge/art-CC%20BY%204.0-lightgrey.svg)](LICENSE-ART)
 
-A modular lunar lander kit for [Kitten Space Agency](https://ahwoo.com/app/100000/kitten-space-agency), from the fictional rocket maker Purrline Rocketworks. Build a robotic lander the size of the real ones, from a small hopper to a cargo lander, out of decks, panels, tanks, engines and legs that snap together at their edges.
+A modular lunar lander kit for [Kitten Space Agency](https://ahwoo.com/app/100000/kitten-space-agency), from the fictional rocket maker Purrline Rocketworks. Build a robotic or crewed lander from decks, panels, tanks, engines and legs that snap together at their edges.
 
-Validated against KSA build version 2026.11.16.5901.
+## Compatibility
+
+Validated against KSA build version **2026.11.16.5901**.
 
 ![A lander built from Tessera parts](images/example-hero.png)
 
-*Mosaic 1, an example lander: two Oct Decks with four Capsule Tanks between them, open isogrid walls that carry four long legs, gold foil, radiator and solar walls, and a Thrust Cone with seven Mizar engines. The probe core, the battery and the RCS blocks are stock parts; the dish and the small instruments on the deck are Facet parts.*
+*An earlier Mosaic 1 lander: two Oct Decks with four Capsule Tanks between them, open isogrid walls that carry four long legs, gold foil, radiator and solar walls, and a Thrust Cone with seven Mizar engines. The probe core, the battery and the RCS blocks are stock parts; the dish and the small instruments on the deck are Facet parts.*
+
+A later Mosaic 1 configuration with the Tessera Avionics Box landed from a 30 km lunar orbit in game tests.
 
 ![A Tessera lander on the Moon, with the Earth above it](images/film/orbit-landed.jpg)
 
@@ -14,7 +18,7 @@ Validated against KSA build version 2026.11.16.5901.
 
 ## Parts
 
-The kit has 18 parts with 38 variants. Each part is one entry in the editor; press V to change its variant (its look).
+The kit has 21 parts with 41 variants. Each part is one entry in the editor; press V to change its variant (its look).
 
 | Picture | Part | What it is |
 | --- | --- | --- |
@@ -31,17 +35,24 @@ The kit has 18 parts with 38 variants. Each part is one entry in the editor; pre
 | ![Tessera Sphere Tank (bare)](images/parts/TesseraTankA_Prefab_SphereTankA.jpg) ![Tessera Sphere Tank (gold blanket)](images/parts/TesseraTankA_Prefab_SphereTankB.jpg) ![Tessera Sphere Tank (silver blanket)](images/parts/TesseraTankA_Prefab_SphereTankC.jpg) ![Tessera Sphere Tank (carbon bottle)](images/parts/TesseraTankA_Prefab_SphereTankD.jpg) | **Tessera Sphere Tank** | Round tank, 92 kg of Methalox; bare, gold blanket, silver blanket, carbon bottle |
 | ![Tessera Capsule Tank (bare)](images/parts/TesseraTankA_Prefab_CapsuleTankA.jpg) ![Tessera Capsule Tank (gold blanket)](images/parts/TesseraTankA_Prefab_CapsuleTankB.jpg) ![Tessera Capsule Tank (silver blanket)](images/parts/TesseraTankA_Prefab_CapsuleTankC.jpg) | **Tessera Capsule Tank** | Long tank, 231 kg of Methalox; bare, gold blanket, silver blanket |
 | ![Tessera Drum Tank (bare)](images/parts/TesseraDrumA_Prefab_DrumTankA.jpg) ![Tessera Drum Tank (gold blanket)](images/parts/TesseraDrumA_Prefab_DrumTankB.jpg) ![Tessera Drum Tank (silver blanket)](images/parts/TesseraDrumA_Prefab_DrumTankC.jpg) | **Tessera Drum Tank** | Wide low tank, 1.2 m wide, 499 kg of Methalox; bare, gold blanket, silver blanket |
-| ![Mizar](images/parts/MizarEngineA_Prefab_DescentEngineA.jpg) | **Mizar** | Descent engine on Methalox, 3.1 kN, 316 s in vacuum, gimbal 4 degrees |
+| ![Mizar](images/parts/MizarEngineA_Prefab_DescentEngineA.jpg) | **Mizar** | Descent engine on Methalox, 3.1 kN, 316 s in vacuum, gimbal range 4 degrees and slew up to 8 degrees per second |
 | ![Mizar Fixed](images/parts/MizarEngineA_Prefab_DescentEngineFixedA.jpg) | **Mizar Fixed** | The same engine on a fixed mount |
 | ![Tessera Landing Leg (short)](images/parts/TesseraLegA_Prefab_LandingLegShortA.jpg) | **Tessera Landing Leg (short)** | Landing leg that deploys |
 | ![Tessera Landing Leg (long)](images/parts/TesseraLegA_Prefab_LandingLegLongA.jpg) | **Tessera Landing Leg (long)** | Longer landing leg that deploys |
 | ![Tessera Lattice Ramp](images/parts/TesseraRampA_Prefab_LatticeRampA.jpg) | **Tessera Lattice Ramp** | Ramp of 2.6 m that folds against the hull and deploys to the ground |
+| ![Tessera Avionics Box with its AU-300 placard and status lights](images/parts/TesseraEquipA_Prefab_AvionicsBoxA.png) | **Tessera Avionics Box** | 14 kg uncrewed control unit with a power switch, status light and 720 kJ battery. Draws 20 W. |
+| ![The eight lenses of the Tessera Floodlight](images/parts/TesseraEquipA_Prefab_FloodlightA.png) | **Tessera Floodlight** | 2.5 kg surface-mounted spotlight with a 90-degree tilt range. Starts off and draws 40 W when on. |
+| ![Tessera Crew Cabin with its EVA hatch and handholds](images/parts/TesseraCabinA_Prefab_CrewCabinA.png) | **Tessera Crew Cabin** | Pressurized two-seat cabin with an interior, EVA exits and handholds. About 1,367.5 kg dry. |
 
-All parts and looks on one sheet: [images/parts/all-parts.jpg](images/parts/all-parts.jpg)
+Original parts and looks on one sheet: [images/parts/all-parts.jpg](images/parts/all-parts.jpg)
 
 ![The five looks of the Wall Panel](images/parts/looks-wall-panel.jpg)
 
-Masses count the structure only, so add a stock probe core and a battery. The tanks hold the true volume of their shape, so a stock tank of the same size holds about four times as much.
+The tanks hold the true volume of their shape, so a stock tank of the same size holds about four times as much.
+
+Use the Avionics Box for uncrewed control. Its avionics have a radiation tolerance of 300 Gy, an upset dose of 270 mSv and 1 g/cm2 of shielding.
+
+The Crew Cabin provides control when an able crew member is aboard. It has a 905 kg polyethylene storm shelter liner. A full cabin carries about 7.13 kg of air, 25.62 kg of water and 27 meals, enough for about four days with two kittens.
 
 ## Building a lander
 
@@ -50,6 +61,10 @@ Masses count the structure only, so add a stock probe core and a battery. The ta
 - A panel snaps to a deck edge, on the top or the bottom face. The roll key turns it on the edge hinge in stops of 0, 26.57, 45, 63.43 and 90 degrees; Shift adds 5 degrees.
 - A leg snaps to the leg pads of a wall or half panel or to the leg ring of the cone. Deploy it from its part menu.
 - The ramp snaps to the outer edge face of a deck and deploys from its part menu.
+- Put the Avionics Box on a deck station or a panel face. Mount the Crew Cabin on a deck station for a crewed lander.
+- Put the Floodlight on a surface and connect it to a power supply. Switch it on and use the Actuate slider in the part menu to aim it.
+- Use the side mounts to put Sphere and Capsule Tanks on a surface. Hold the tank near a deck station to use the stack connection. The side mounts do not pass fuel, so plan a fuel path to the engine.
+- The Thrust Cone and Core Column use stack connections. The Hex and Oct Decks show more of their top faces in the part picker.
 - The engine scale steps by 0.25. Mass and propellant change with the cube of the scale, thrust with its square.
 
 | Hex tier | Tank cluster |

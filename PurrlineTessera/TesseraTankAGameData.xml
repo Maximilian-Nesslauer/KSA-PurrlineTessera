@@ -13,6 +13,7 @@
     </InertMasses>
     <EditorTags Modify="Extend">
       <EditorTag Ref="Fuel Tanks" />
+      <EditorTag Ref="NoFaceSnapping" />
     </EditorTags>
     <Components Modify="Extend">
       <Tank Key="MainTank">
@@ -39,6 +40,13 @@
       <Connector Key="_connector04TopPort" Modify="Patch">
         <Capabilities>BulkFluid</Capabilities>
       </Connector>
+      <Connector Key="SurfaceMount">
+        <Transform>
+          <Position X="0.64" Y="-0.307" Z="0" />
+          <Rotation X="0" Y="0" Z="-1.5708" />
+        </Transform>
+        <Flags>ToSurface</Flags>
+      </Connector>
     </Connectors>
   </Part>
   <Part Id="TesseraTankA_Prefab_SphereTankA" Modify="Patch" DisplayName="Tessera Sphere Tank">
@@ -53,6 +61,7 @@
     </InertMasses>
     <EditorTags Modify="Extend">
       <EditorTag Ref="Fuel Tanks" />
+      <EditorTag Ref="NoFaceSnapping" />
     </EditorTags>
     <Components Modify="Extend">
       <Tank Key="MainTank">
@@ -73,6 +82,13 @@
       </Connector>
       <Connector Key="_connector03TopPort" Modify="Patch">
         <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+      <Connector Key="SurfaceMount">
+        <Transform>
+          <Position X="0.34" Y="-0.307" Z="0" />
+          <Rotation X="0" Y="0" Z="-1.5708" />
+        </Transform>
+        <Flags>ToSurface</Flags>
       </Connector>
     </Connectors>
   </Part>

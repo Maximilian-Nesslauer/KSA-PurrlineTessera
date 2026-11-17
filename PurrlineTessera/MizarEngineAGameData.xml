@@ -42,6 +42,7 @@
       <Gimbal Key="MizarEngineA_Subpart_EngineAssembly1" Modify="Patch">
         <MaxAngleY Degrees="4" />
         <MaxAngleZ Degrees="4" />
+        <MaxSlewRate DegreesPerSecond="8" />
       </Gimbal>
     </Gimbals>
   </Part>

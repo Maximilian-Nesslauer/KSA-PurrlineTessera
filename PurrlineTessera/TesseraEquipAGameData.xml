@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Game data of the set TesseraEquipA. Parts by Purrline Rocketworks, a fictional maker. -->
+<Assets>
+  <KeyframeAnimation Id="TesseraEquipA_Prefab_FloodlightA_Anim" Path="Animations/TesseraEquipA_Prefab_FloodlightA_Anim.glb" />
+  <Part Id="TesseraEquipA_Prefab_AvionicsBoxA" Modify="Patch" DisplayName="Tessera Avionics Box" FaceSnapMode="PhysicsCollider">
+    <InertMasses Modify="Extend">
+      <SolidCuboidMass>
+        <Mass Kg="14" />
+        <LocationAsmb X="0.1" Y="0" Z="0" />
+        <LengthX M="0.2" />
+        <LengthY M="0.4" />
+        <LengthZ M="0.3" />
+      </SolidCuboidMass>
+    </InertMasses>
+    <EditorTags Modify="Extend">
+      <EditorTag Ref="Capsules" />
+    </EditorTags>
+    <Diameters Modify="Extend">
+      <Diameter M="0.5" />
+    </Diameters>
+    <Components Modify="Extend">
+      <Control />
+      <Battery>
+        <MaximumCapacity J="720000" />
+      </Battery>
+      <PowerConsumer PowerSwitch="true" HasStatusLight="true">
+        <Consumed W="20" />
+      </PowerConsumer>
+      <Avionics ToleranceGy="300" UpsetDoseMSv="270" />
+      <RadiationShield Key="AvionicsBox" HullGPerCm2="1" />
+    </Components>
+  </Part>
+  <Part Id="TesseraEquipA_Prefab_FloodlightA" Modify="Patch" DisplayName="Tessera Floodlight">
+    <InertMasses Modify="Extend">
+      <SolidCuboidMass>
+        <Mass Kg="2.5" />
+        <LocationAsmb X="0" Y="0.07" Z="0" />
+        <LengthX M="0.11" />
+        <LengthY M="0.14" />
+        <LengthZ M="0.23" />
+      </SolidCuboidMass>
+    </InertMasses>
+    <EditorTags Modify="Extend">
+      <EditorTag Ref="Lights" />
+    </EditorTags>
+    <Components Modify="Extend">
+      <KeyframeAnimationModule Key="FloodlightTilt">
+        <KeyframeAnimation Ref="TesseraEquipA_Prefab_FloodlightA_Anim" />
+      </KeyframeAnimationModule>
+      <PowerConsumer LightSwitch="true">
+        <Consumed W="40" />
+      </PowerConsumer>
+    </Components>
+    <Connectors Modify="Extend">
+      <Connector Key="_connector01Mount" Modify="Patch">
+        <Flags>ToSurface</Flags>
+      </Connector>
+    </Connectors>
+  </Part>
+  <SubPart Id="TesseraEquipA_Subpart_FloodHead" Modify="Patch">
+    <Components Modify="Extend">
+      <Light Key="FloodBeam">
+        <Type>Spot</Type>
+        <Transform>
+          <Position X="0" Y="0.14" Z="0" />
+          <Rotation Z="1.5708" />
+        </Transform>
+        <Range Value="20" />
+        <Intensity Value="40" />
+        <Color R="1" G="0.95" B="0.88" />
+        <InnerAngle Value="0.3" />
+        <OuterAngle Value="0.7" />
+      </Light>
+    </Components>
+  </SubPart>
+</Assets>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Game data of the set TesseraCabinA. Parts by Purrline Rocketworks, a fictional maker. -->
+<Assets>
+  <!-- The inside of the cabin: the liner mesh of the set loaded inside out (MeshAtlas Inverted, as the HM-2
+       interior shell), and the seats, lockers, console and bottles. Both are drawn only in IVA or when the
+       camera is inside the vehicle (PartModel Internal) and cast no shadow. -->
+  <MeshAtlas Id="TesseraCabinA_InteriorShellAtlas" Path="Meshes/TesseraCabinA_MeshAtlas.glb" Inverted="true">
+    <Meshes>
+      <Mesh>TesseraCabinA_Subpart_CabinLiner</Mesh>
+    </Meshes>
+  </MeshAtlas>
+  <SubPart Id="TesseraCabinA_Subpart_CabinLinerInterior">
+    <Components>
+      <PartModel Key="TesseraCabinA_Subpart_CabinLinerInterior_Model">
+        <Internal>true</Internal>
+        <ShadowCaster>false</ShadowCaster>
+        <Mesh Ref="TesseraCabinA_Subpart_CabinLiner_Inverted" />
+        <Material Ref="TesseraCabinA_Material" />
+      </PartModel>
+    </Components>
+  </SubPart>
+  <SubPart Id="TesseraCabinA_Subpart_CabinFitInterior">
+    <Components>
+      <PartModel Key="TesseraCabinA_Subpart_CabinFitInterior_Model">
+        <Internal>true</Internal>
+        <ShadowCaster>false</ShadowCaster>
+        <Mesh Ref="TesseraCabinA_Subpart_CabinFit" />
+        <Material Ref="TesseraCabinA_Material" />
+      </PartModel>
+    </Components>
+  </SubPart>
+  <!-- EVADoor.ShowContextMenu uses Parent.InstanceId as the button identity, so each seat needs its own
+       subpart instance at the hatch. Seat B has no model and does not draw a second hatch. -->
+  <SubPart Id="TesseraCabinA_Subpart_CabinHatch" Modify="Patch">
+    <Components Modify="Extend">
+      <EVADoor Key="DoorSeatA" SeatId="TesseraCabinA_Prefab_CrewCabinA_SeatA" />
+    </Components>
+  </SubPart>
+  <SubPart Id="TesseraCabinA_Subpart_CabinExitB">
+    <Components>
+      <EVADoor Key="DoorSeatB" SeatId="TesseraCabinA_Prefab_CrewCabinA_SeatB" />
+    </Components>
+  </SubPart>
+  <Part Id="TesseraCabinA_Prefab_CrewCabinA" Modify="Patch" DisplayName="Tessera Crew Cabin">
+    <EditorTags Modify="Extend">
+      <EditorTag Ref="Capsules" />
+      <EditorTag Ref="Life Support" />
+    </EditorTags>
+    <Diameters Modify="Extend">
+      <Diameter M="1" />
+    </Diameters>
+    <SubParts Modify="Extend">
+      <SubPart Key="TesseraCabinA_Subpart_CabinExitB1" Ref="TesseraCabinA_Subpart_CabinExitB">
+        <Transform>
+          <Position X="0.86" Z="0.85" />
+        </Transform>
+      </SubPart>
+      <SubPart Key="TesseraCabinA_Subpart_CabinLinerInterior1" Ref="TesseraCabinA_Subpart_CabinLinerInterior" />
+      <SubPart Key="TesseraCabinA_Subpart_CabinFitInterior1" Ref="TesseraCabinA_Subpart_CabinFitInterior" />
+    </SubParts>
+    <InertMasses Modify="Extend">
+      <CustomMass>
+        <LocationAsmb X="0.85" />
+        <Mass Kg="450" />
+        <MassSpecificInertia Ixx="0.3" Iyy="0.42" Izz="0.42" />
+      </CustomMass>
+    </InertMasses>
+    <Components Modify="Extend">
+      <!-- Four days for two kittens: eight kitten-days of oxygen and water, and 27 meals and 6 LiOH canisters
+           in the lockers under the seats. -->
+      <Habitat Key="Cabin">
+        <HabitableVolume M3="2.2" />
+        <StorageVolume M3="0.063" />
+        <LocationAsmb X="0.85" />
+      </Habitat>
+      <Tank Key="OxygenBottle">
+        <SphericalTank>
+          <LocationAsmb X="1.55" Y="0.2" Z="0.08" />
+          <Material Ref="Aluminum.2014" Phase="Solid" />
+          <OuterRadius M="0.1926" />
+          <WallThickness Mm="9.1" />
+          <RoleAffinity>Air</RoleAffinity>
+        </SphericalTank>
+      </Tank>
+      <Tank Key="WaterTank">
+        <SphericalTank>
+          <LocationAsmb X="1.55" Y="-0.2" Z="0.08" />
+          <Material Ref="Aluminum.2014" Phase="Solid" />
+          <OuterRadius M="0.1839" />
+          <WallThickness Mm="1" />
+          <RoleAffinity>Water</RoleAffinity>
+        </SphericalTank>
+      </Tank>
+      <!-- Storm shelter as on HM-2: the 4 mm aluminium wall and 20 g/cm2 of polyethylene stowage round the
+           seated crew, a 0.6 m sphere. A seated kitten gets about 1 percent of a solar storm. -->
+      <RadiationShield Key="StormShelter" HullGPerCm2="1.1">
+        <Material Ref="Polyethylene.HD" />
+        <Area M2="4.52" />
+        <Mass Kg="905" />
+        <LocationAsmb X="0.87" Z="0.12" />
+      </RadiationShield>
+      <IVASeat Key="TesseraCabinA_Prefab_CrewCabinA_SeatA">
+        <Position X="0.87" Y="0.4" Z="0.12" />
+        <ForwardAxis Z="-1" />
+        <UpAxis X="1" />
+      </IVASeat>
+      <IVASeat Key="TesseraCabinA_Prefab_CrewCabinA_SeatB">
+        <Position X="0.87" Y="-0.4" Z="0.12" />
+        <ForwardAxis Z="-1" />
+        <UpAxis X="1" />
+      </IVASeat>
+      <Light Key="CabinLamp">
+        <Type>Point</Type>
+        <Transform>
+          <Position X="1.695" Z="-0.3" />
+        </Transform>
+        <Range Value="1.8" />
+        <Intensity Value="1.0" />
+        <Color R="1.0" G="0.93" B="0.8" />
+      </Light>
+      <Light Key="FaceFillA">
+        <Type>Point</Type>
+        <Transform>
+          <Position X="0.77" Y="0.4" Z="-0.23" />
+        </Transform>
+        <Range Value="1.0" />
+        <Intensity Value="0.5" />
+        <Color R="1.0" G="0.95" B="0.85" />
+        <RayTracing>false</RayTracing>
+        <DisableInIva>true</DisableInIva>
+      </Light>
+      <Light Key="FaceFillB">
+        <Type>Point</Type>
+        <Transform>
+          <Position X="0.77" Y="-0.4" Z="-0.23" />
+        </Transform>
+        <Range Value="1.0" />
+        <Intensity Value="0.5" />
+        <Color R="1.0" G="0.95" B="0.85" />
+        <RayTracing>false</RayTracing>
+        <DisableInIva>true</DisableInIva>
+      </Light>
+      <!-- The hatch lamp over the hand bar lights the ladder: a Spot shines along its turned +X, here down and
+           out of the hatch side (LightModule). -->
+      <Light Key="HatchLamp">
+        <Type>Spot</Type>
+        <Transform>
+          <Position X="1.33" Z="0.905" />
+          <Rotation Y="-2.3562" />
+        </Transform>
+        <Range Value="4" />
+        <Intensity Value="3" />
+        <Color R="1.0" G="0.97" B="0.9" />
+        <InnerAngle Value="0.5" />
+        <OuterAngle Value="0.9" />
+      </Light>
+      <Battery>
+        <MaximumCapacity J="20000" />
+      </Battery>
+      <PowerConsumer LightSwitch="true" LightIsActive="true">
+        <Consumed W="10" />
+      </PowerConsumer>
+      <Control />
+    </Components>
+    <Grabs Modify="Extend">
+      <Grab Key="rung1">
+        <Position X="0.1" Z="0.95" />
+        <Normal Z="1" />
+      </Grab>
+      <Grab Key="rung2">
+        <Position X="0.3" Z="0.95" />
+        <Normal Z="1" />
+      </Grab>
+      <Grab Key="rung3">
+        <Position X="0.5" Z="0.95" />
+        <Normal Z="1" />
+      </Grab>
+      <Grab Key="bar">
+        <Position X="1.24" Z="0.93" />
+        <Normal Z="1" />
+      </Grab>
+    </Grabs>
+  </Part>
+</Assets>
