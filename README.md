@@ -2,7 +2,7 @@
 
 A modular lunar lander kit for [Kitten Space Agency](https://ahwoo.com/app/100000/kitten-space-agency), from the fictional rocket maker Purrline Rocketworks. Build a robotic lander the size of the real ones, from a small hopper to a cargo lander, out of decks, panels, tanks, engines and legs that snap together at their edges.
 
-Validated against KSA build version 2026.11.10.5801.
+Validated against KSA build version 2026.11.16.5901.
 
 ![A lander built from Tessera parts](images/example-hero.png)
 

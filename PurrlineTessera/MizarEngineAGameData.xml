@@ -90,6 +90,7 @@
         <Nozzles>
           <Nozzle KeyRef="Nozzle" />
         </Nozzles>
+        <MinimumThrottle Value="0.1" />
       </Rocket>
     </Rockets>
     <RocketCores Modify="Extend">
@@ -102,7 +103,6 @@
         </Reaction>
         <MaxPressure Bar="4.84" />
         <ThermalEfficiency Value="1" />
-        <MinimumThrottle Value="0.1" />
       </Combustor>
     </RocketCores>
     <RocketNozzles Modify="Extend">
