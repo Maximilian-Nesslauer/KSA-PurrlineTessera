@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.1
+
+- Widen the Floodlight beam and reduce glare at the lens and on nearby surfaces.
+
 ## 1.1.0
 
 - Add a two-seat crew cabin with an interior, EVA exits, crewed control, about four days of supplies and a 905 kg polyethylene storm shelter liner.

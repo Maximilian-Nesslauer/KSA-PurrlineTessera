@@ -65,11 +65,11 @@
           <Position X="0" Y="0.14" Z="0" />
           <Rotation Z="1.5708" />
         </Transform>
-        <Range Value="20" />
-        <Intensity Value="40" />
+        <Range Value="10" />
+        <Intensity Value="14" />
         <Color R="1" G="0.95" B="0.88" />
-        <InnerAngle Value="0.3" />
-        <OuterAngle Value="0.7" />
+        <InnerAngle Value="0.52" />
+        <OuterAngle Value="0.92" />
       </Light>
     </Components>
   </SubPart>
