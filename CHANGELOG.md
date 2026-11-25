@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.2
+
+- Mark the mod as compatible with KSA 2026.11.25.5949. No functional changes.
+
 ## 1.1.1
 
 - Widen the Floodlight beam and reduce glare at the lens and on nearby surfaces.

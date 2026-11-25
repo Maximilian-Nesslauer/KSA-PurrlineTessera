@@ -1,5 +1,5 @@
 name = "Tessera by Purrline Rocketworks"
-version = "1.1.1"
+version = "1.1.2"
 description = "A modular lunar lander kit: decks, panels, a thrust cone, a core column, tanks, the Mizar descent engine, landing legs, a lattice ramp, a drum tank, an avionics box, a floodlight and a two-seat crew cabin."
 assets = [
     "TesseraPanelAAssets.xml",
