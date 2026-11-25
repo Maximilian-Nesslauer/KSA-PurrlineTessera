@@ -4,7 +4,7 @@ A modular lunar lander kit for [Kitten Space Agency](https://ahwoo.com/app/10000
 
 ## Compatibility
 
-Validated against KSA build version **2026.11.16.5901**.
+Validated against KSA build version **2026.11.25.5949**.
 
 ![A lander built from Tessera parts](images/example-hero.png)
 
